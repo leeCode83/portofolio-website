@@ -12,20 +12,20 @@ All colors MUST be HSL.
   :root {
     /* Dark theme - Professional Backend Developer Portfolio with custom palette */
     --background: 215 46% 8%;
-    --foreground: 41 51% 90%;
+    --foreground: 0 0% 100%;
 
     --card: 215 42% 19%;
-    --card-foreground: 41 51% 90%;
+    --card-foreground: 0 0% 100%;
 
     --popover: 215 42% 19%;
-    --popover-foreground: 41 51% 90%;
+    --popover-foreground: 0 0% 100%;
 
     /* Medium blue accent for interactive elements */
     --primary: 210 31% 56%;
     --primary-foreground: 215 46% 8%;
 
     --secondary: 210 31% 35%;
-    --secondary-foreground: 41 51% 90%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 31% 35%;
     --muted-foreground: 210 31% 56%;
@@ -34,7 +34,7 @@ All colors MUST be HSL.
     --accent-foreground: 215 46% 8%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 41 51% 90%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 210 31% 35%;
     --input: 210 31% 35%;
@@ -46,7 +46,7 @@ All colors MUST be HSL.
     --hero-background: 215 46% 8%;
     --section-background: 215 46% 8%;
     --card-hover: 215 42% 22%;
-    --text-primary: 41 51% 90%;
+    --text-primary: 0 0% 100%;
     --text-secondary: 210 31% 56%;
     --accent-glow: 210 31% 56%;
 
