@@ -11,20 +11,20 @@ const AboutSection = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed">
                 I'm a passionate Backend and Smart Contract Developer with over 5 years of experience 
                 building scalable web applications and innovative blockchain solutions. My expertise spans 
                 across multiple programming languages and frameworks, with a special focus on creating 
                 secure, efficient, and maintainable code.
               </p>
               
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed">
                 My journey in tech started with traditional web development, but I quickly became fascinated 
                 by the potential of blockchain technology. Today, I specialize in developing smart contracts, 
                 DeFi protocols, and the backend infrastructure that powers modern decentralized applications.
               </p>
               
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed">
                 When I'm not coding, you can find me contributing to open-source projects, writing technical 
                 articles, or exploring the latest developments in Web3 and distributed systems architecture.
               </p>
