@@ -37,12 +37,6 @@ const ContactSection = () => {
       url: "https://linkedin.com/in/johndoe",
       icon: <Linkedin className="h-5 w-5" />,
       description: "Let's connect professionally"
-    },
-    {
-      name: "Twitter",
-      url: "https://twitter.com/johndoe",
-      icon: <Twitter className="h-5 w-5" />,
-      description: "Follow my tech journey"
     }
   ];
 
@@ -58,110 +52,81 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto">
+          {/* Email Section */}
+          <div className="mb-12">
+            <Card className="border-border/50 bg-card/50 backdrop-blur-sm max-w-2xl mx-auto">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                    <Mail className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Email</h3>
+                    <p className="text-muted-foreground">Drop me a line anytime</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-2">
+                  <span className="font-mono text-sm bg-muted/50 px-3 py-2 rounded border">
+                    john.doe@example.com
+                  </span>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-8 w-8"
+                    onClick={copyEmail}
+                  >
+                    {emailCopied ? (
+                      <Check className="h-4 w-4 text-green-500" />
+                    ) : (
+                      <Copy className="h-4 w-4" />
+                    )}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Social Links */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {socialLinks.map((social, index) => (
+              <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm card-hover-effect">
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex flex-col items-center text-center space-y-4">
                     <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                      <Mail className="h-6 w-6" />
+                      {social.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg">Email</h3>
-                      <p className="text-muted-foreground">Drop me a line anytime</p>
+                      <h4 className="font-semibold">{social.name}</h4>
+                      <p className="text-muted-foreground text-sm">{social.description}</p>
                     </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <span className="font-mono text-sm bg-muted/50 px-3 py-2 rounded border">
-                      john.doe@example.com
-                    </span>
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="h-8 w-8"
-                      onClick={copyEmail}
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="hover:bg-primary/10 hover:text-primary hover:border-primary transition-all"
+                      onClick={() => window.open(social.url, "_blank")}
                     >
-                      {emailCopied ? (
-                        <Check className="h-4 w-4 text-green-500" />
-                      ) : (
-                        <Copy className="h-4 w-4" />
-                      )}
+                      Visit
                     </Button>
                   </div>
                 </CardContent>
               </Card>
-
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                      <MapPin className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-lg">Location</h3>
-                      <p className="text-muted-foreground">Remote / San Francisco, CA</p>
-                    </div>
+            ))}
+            
+            {/* Collaboration CTA Card */}
+            <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                    <Mail className="h-5 w-5" />
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                      <Calendar className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-lg">Availability</h3>
-                      <p className="text-muted-foreground">Open to new opportunities</p>
-                    </div>
+                  <div>
+                    <h4 className="font-semibold text-primary">Ready to collaborate?</h4>
+                    <p className="text-muted-foreground text-sm">
+                      Let's discuss your project ideas
+                    </p>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Social Links */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-semibold mb-6">Find Me Online</h3>
-              
-              <div className="space-y-4">
-                {socialLinks.map((social, index) => (
-                  <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm card-hover-effect">
-                    <CardContent className="p-6">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-4">
-                          <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                            {social.icon}
-                          </div>
-                          <div>
-                            <h4 className="font-semibold">{social.name}</h4>
-                            <p className="text-muted-foreground text-sm">{social.description}</p>
-                          </div>
-                        </div>
-                        
-                        <Button 
-                          variant="outline" 
-                          size="sm"
-                          className="hover:bg-primary/10 hover:text-primary hover:border-primary transition-all"
-                          onClick={() => window.open(social.url, "_blank")}
-                        >
-                          Visit
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-
-              <div className="pt-8">
-                <div className="text-center p-6 bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-primary">Ready to collaborate?</h4>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    Whether you have a project in mind or just want to chat about tech, I'd love to hear from you.
-                  </p>
                   <Button 
                     className="bg-primary hover:bg-primary/90 transition-all hover:scale-105"
                     onClick={() => window.location.href = "mailto:john.doe@example.com"}
@@ -169,8 +134,8 @@ const ContactSection = () => {
                     Send Message
                   </Button>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
