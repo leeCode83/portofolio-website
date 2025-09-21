@@ -11,34 +11,23 @@ import {
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Blockchain & Smart Contracts",
-      icon: <Blocks className="h-6 w-6" />,
-      skills: ["Solidity", "Rust", "Web3.js", "Ethers.js", "Hardhat", "Truffle", "OpenZeppelin", "Chainlink"]
-    },
-    {
+      title: "Programming Languages",
+      icon: <Code2 className="h-6 w-6" />,
+      skills: ["TypeScript", "JavaScript", "Python", "Go", "Solidity", "Java", "SQL"]
+    }, {
       title: "Backend Development",
       icon: <Server className="h-6 w-6" />,
-      skills: ["Node.js", "Python", "Go", "Java", "Express.js", "FastAPI", "Django", "Gin"]
-    },
+      skills: ["Node.js", "Java", "Laravel"]
+    }, 
     {
       title: "Databases & Storage",
       icon: <Database className="h-6 w-6" />,
-      skills: ["PostgreSQL", "MongoDB", "Redis", "IPFS", "MySQL", "Elasticsearch", "InfluxDB"]
+      skills: ["PostgreSQL", "Redis", "0G Storage", "MySQL"]
     },
     {
-      title: "Programming Languages",
-      icon: <Code2 className="h-6 w-6" />,
-      skills: ["TypeScript", "JavaScript", "Python", "Go", "Solidity", "Rust", "Java", "SQL"]
-    },
-    {
-      title: "DevOps & Cloud",
-      icon: <Cloud className="h-6 w-6" />,
-      skills: ["Docker", "Kubernetes", "AWS", "GCP", "Terraform", "Jenkins", "GitHub Actions", "Prometheus"]
-    },
-    {
-      title: "Security & Testing",
-      icon: <Shield className="h-6 w-6" />,
-      skills: ["Smart Contract Auditing", "Penetration Testing", "Jest", "Mocha", "Pytest", "Security Best Practices"]
+      title: "Blockchain & Smart Contracts",
+      icon: <Blocks className="h-6 w-6" />,
+      skills: ["Solidity", "Rust", "Web3.js", "Ethers.js", "Wagmi", "OpenZeppelin"]
     }
   ];
 
@@ -84,13 +73,13 @@ const SkillsSection = () => {
           <h3 className="text-xl font-semibold mb-6 text-primary">Certifications & Achievements</h3>
           <div className="flex flex-wrap justify-center gap-4">
             <Badge variant="secondary" className="text-sm py-2 px-4 bg-secondary/30">
-              AWS Certified Solutions Architect
+              IBM Granite for Software Development - IBM Skillsbuild
             </Badge>
             <Badge variant="secondary" className="text-sm py-2 px-4 bg-secondary/30">
-              Certified Ethereum Developer
+              Certified Ethereum Developer - HackQuest
             </Badge>
             <Badge variant="secondary" className="text-sm py-2 px-4 bg-secondary/30">
-              Smart Contract Security Specialist
+              Java Programming Course - Great Learning
             </Badge>
           </div>
         </div>

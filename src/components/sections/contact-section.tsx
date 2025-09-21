@@ -28,13 +28,13 @@ const ContactSection = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/johndoe",
+      url: "https://github.com/leeCode83",
       icon: <Github className="h-5 w-5" />,
       description: "Check out my repositories"
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/johndoe",
+      url: "https://linkedin.com/in/leandro-nardphine",
       icon: <Linkedin className="h-5 w-5" />,
       description: "Let's connect professionally"
     }
@@ -69,7 +69,7 @@ const ContactSection = () => {
                   
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-xs bg-muted/50 px-2 py-1 rounded border">
-                      john.doe@example.com
+                      leandro.halomoan@binus.ac.id
                     </span>
                     <Button
                       variant="outline"

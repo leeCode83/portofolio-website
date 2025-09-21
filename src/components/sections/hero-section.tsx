@@ -30,8 +30,8 @@ const HeroSection = () => {
                 Hello, I'm
               </p>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                <span className="text-foreground">John</span>{" "}
-                <span className="text-primary text-glow">Doe</span>
+                <span className="text-foreground">Leandro</span>{" "}
+                <span className="text-primary text-glow">Nardphine</span>
               </h1>
             </div>
 
@@ -41,7 +41,7 @@ const HeroSection = () => {
             </h2>
 
             {/* Bio */}
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl lg:max-w-none leading-relaxed">
+            <p className="text-lg md:text-xl text-white max-w-2xl lg:max-w-none leading-relaxed">
               Building scalable backend systems and innovative blockchain solutions 
               with a focus on performance, security, and clean architecture.
             </p>
@@ -51,7 +51,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 onClick={scrollToProjects}
-                className="font-semibold px-8 py-3 text-base bg-primary hover:bg-primary/90 transition-all hover:scale-105"
+                className="font-semibold px-8 py-3 text-base bg-primary hover:bg-primary/90 transition-all hover:scale-105 hover:text-white"
               >
                 View My Work
               </Button>
@@ -82,11 +82,6 @@ const HeroSection = () => {
               <div className="absolute inset-0 rounded-2xl bg-primary/10 mix-blend-multiply"></div>
             </div>
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="h-6 w-6 text-muted-foreground" />
         </div>
       </div>
     </section>
