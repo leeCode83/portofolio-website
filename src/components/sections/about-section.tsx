@@ -11,33 +11,27 @@ const AboutSection = () => {
   const aboutCards = [
     {
       icon: <Code2 className="h-8 w-8" />,
-      title: "Backend & Smart Contract Developer",
-      description: "Over 5 years of experience building scalable web applications and innovative blockchain solutions with expertise across multiple programming languages and frameworks.",
-      highlight: "5+ Years Experience"
+      title: "Backend Developer",
+      description: "Already learn backend development from 6 month ago. I learn about RESTful API, Cache, Rate Limiter, and many frameworks like Nest.js, Spring Boot, and Laravel",
+      highlight: "Understanding Backend Development Principal"
     },
     {
       icon: <Blocks className="h-8 w-8" />,
-      title: "Blockchain Specialist",
-      description: "My journey started with traditional web development, but I quickly became fascinated by blockchain technology. I now specialize in smart contracts and DeFi protocols.",
-      highlight: "25+ Smart Contracts Deployed"
-    },
-    {
-      icon: <Trophy className="h-8 w-8" />,
-      title: "Project Success",
-      description: "Focused on creating secure, efficient, and maintainable code that powers modern decentralized applications and backend infrastructure.",
-      highlight: "50+ Projects Completed"
+      title: "Smart Contract Development",
+      description: "Learn about blockchain and smart contract from community and internet. Interest working in Web3 space and do web3 hackathons.",
+      highlight: "Attending some hackathon and active in web3 community."
     },
     {
       icon: <BookOpen className="h-8 w-8" />,
       title: "Continuous Learning",
-      description: "When I'm not coding, I contribute to open-source projects, write technical articles, and explore the latest developments in Web3 and distributed systems.",
-      highlight: "Open Source Contributor"
+      description: "When I'm not coding, I learning new tools or framework from documentation and explore the latest developments in Web3 and distributed systems.",
+      highlight: "Great Learner"
     },
     {
       icon: <Zap className="h-8 w-8" />,
       title: "Current Focus",
-      description: "Currently specializing in DeFi protocols and the backend infrastructure that powers modern decentralized applications in the Web3 ecosystem.",
-      highlight: "DeFi & Web3"
+      description: "Currently focus in how to integrate blockchain network or tools in backend system.",
+      highlight: "Blockchain Integration"
     }
   ];
 

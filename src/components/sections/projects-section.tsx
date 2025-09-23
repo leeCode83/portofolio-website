@@ -44,7 +44,7 @@ const ProjectsSection = () => {
       title: "Video Platform Smart Contract",
       description: "Decentralized video platform built on Web3 technologies. It allows users to upload, view, and interact with videos in a peer-to-peer fashion, leveraging blockchain for features like ownership, payments, and censorship resistance.",
       technologies: ["Solidity"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/leeCode83/Video-Platform-Web3",
       liveUrl: null,
     }
   ];
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
               </CardHeader>
 
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-white/70 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -89,14 +89,17 @@ const ProjectsSection = () => {
               </CardContent>
 
               <CardFooter className="flex gap-3">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="flex items-center gap-2 hover:bg-muted/50 transition-colors"
-                >
-                  <Github className="h-4 w-4" />
-                  Code
-                </Button>
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="flex items-center gap-2 hover:bg-muted/50 transition-colors"
+                  >
+                    <Github className="h-4 w-4" />
+                    Code
+                  </Button>
+                </a>
+                
 
                 {project.liveUrl && (
                   <Button

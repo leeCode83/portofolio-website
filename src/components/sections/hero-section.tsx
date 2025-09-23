@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
-import heroDeveloper from "@/assets/hero-developer.jpg";
+import heroDeveloper from "@/assets/hero-me1.png";
 
 const HeroSection = () => {
   const scrollToProjects = () => {
@@ -57,15 +57,17 @@ const HeroSection = () => {
               </Button>
               
               <div className="flex gap-4">
-                <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
-                  <Github className="h-5 w-5" />
-                </Button>
-                <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
-                  <Linkedin className="h-5 w-5" />
-                </Button>
-                <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
-                  <Mail className="h-5 w-5" />
-                </Button>
+                <a href="https://github.com/leeCode83">
+                  <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+                    <Github className="h-5 w-5" />
+                  </Button>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/leandro-nardphine/">
+                  <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+                    <Linkedin className="h-5 w-5" />
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -76,10 +78,8 @@ const HeroSection = () => {
               <img 
                 src={heroDeveloper} 
                 alt="Professional developer at work" 
-                className="rounded-2xl shadow-2xl w-full h-auto max-w-md mx-auto lg:max-w-full"
+                className="rounded-xl shadow-2xl w-full h-auto max-w-md mx-auto lg:max-w-full"
               />
-              {/* Subtle overlay effect */}
-              <div className="absolute inset-0 rounded-2xl bg-primary/10 mix-blend-multiply"></div>
             </div>
           </div>
         </div>

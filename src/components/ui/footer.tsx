@@ -7,18 +7,13 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/johndoe",
+      url: "https://github.com/leeCode83",
       icon: <Github className="h-4 w-4" />
     },
     {
       name: "LinkedIn", 
-      url: "https://linkedin.com/in/johndoe",
+      url: "https://linkedin.com/in/leandro-nardphine",
       icon: <Linkedin className="h-4 w-4" />
-    },
-    {
-      name: "Twitter",
-      url: "https://twitter.com/johndoe", 
-      icon: <Twitter className="h-4 w-4" />
     }
   ];
 
@@ -40,7 +35,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Leandro Nardphine. All rights reserved.
           </p>
 
           {/* Social Links */}
