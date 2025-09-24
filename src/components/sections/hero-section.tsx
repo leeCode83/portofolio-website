@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
-import heroDeveloper from "@/assets/hero-me1.png";
+import heroDeveloper from "@/assets/hero-me2.png";
 
 const HeroSection = () => {
   const scrollToProjects = () => {
@@ -75,9 +75,9 @@ const HeroSection = () => {
           {/* Right side - Hero image */}
           <div className="relative order-first lg:order-last">
             <div className="relative">
-              <img 
-                src={heroDeveloper} 
-                alt="Professional developer at work" 
+              <img
+                src={heroDeveloper}
+                alt="Professional developer at work"
                 className="rounded-xl shadow-2xl w-full h-auto max-w-md mx-auto lg:max-w-full"
               />
             </div>
