@@ -78,7 +78,7 @@ const HeroSection = () => {
               <img
                 src={heroDeveloper}
                 alt="Professional developer at work"
-                className="rounded-xl shadow-2xl w-full h-auto max-w-md mx-auto lg:max-w-full"
+                className="rounded-xl shadow-2xl w-full h-auto max-w-xs mx-auto lg:max-w-sm"
               />
             </div>
           </div>
