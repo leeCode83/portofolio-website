@@ -45,10 +45,15 @@ const HeroSection = () => {
               Hello, I'm
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              <span className="text-primary text-glow">
-                {displayedName}
-                <span className="animate-pulse">|</span>
+              <span className="text-foreground">
+                {displayedName.slice(0, 7)}
               </span>
+              {displayedName.length > 7 && (
+                <span className="text-primary text-glow">
+                  {displayedName.slice(7)}
+                </span>
+              )}
+              <span className="animate-pulse">|</span>
             </h1>
           </div>
 
