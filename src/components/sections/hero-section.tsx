@@ -1,8 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
-import heroDeveloper from "@/assets/hero-me2.png";
+import { useState, useEffect } from "react";
 
 const HeroSection = () => {
+  const [displayedName, setDisplayedName] = useState("");
+  const fullName = "Leandro Nardphine";
+  
+  useEffect(() => {
+    let currentIndex = 0;
+    const timer = setInterval(() => {
+      if (currentIndex <= fullName.length) {
+        setDisplayedName(fullName.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100);
+
+    return () => clearInterval(timer);
+  }, []);
+
   const scrollToProjects = () => {
     const element = document.getElementById("projects");
     if (element) {
@@ -21,65 +38,53 @@ const HeroSection = () => {
       </div>
       
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left side - Text content */}
-          <div className="space-y-8 text-center lg:text-left">
-            {/* Greeting */}
-            <div className="space-y-2">
-              <p className="text-muted-foreground font-mono text-sm md:text-base">
-                Hello, I'm
-              </p>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                <span className="text-foreground">Leandro</span>{" "}
-                <span className="text-primary text-glow">Nardphine</span>
-              </h1>
-            </div>
-
-            {/* Role */}
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-mono text-muted-foreground">
-              Backend & Smart Contract Developer
-            </h2>
-
-            {/* Bio */}
-            <p className="text-lg md:text-xl text-white max-w-2xl lg:max-w-none leading-relaxed">
-              Building scalable backend systems and innovative blockchain solutions 
-              with a focus on performance, security, and clean architecture.
+        <div className="text-center space-y-8">
+          {/* Greeting */}
+          <div className="space-y-2">
+            <p className="text-muted-foreground font-mono text-sm md:text-base">
+              Hello, I'm
             </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-8">
-              <Button 
-                size="lg" 
-                onClick={scrollToProjects}
-                className="font-semibold px-8 py-3 text-base bg-primary hover:bg-primary/90 transition-all hover:scale-105 hover:text-white"
-              >
-                View My Work
-              </Button>
-              
-              <div className="flex gap-4">
-                <a href="https://github.com/leeCode83">
-                  <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
-                    <Github className="h-5 w-5" />
-                  </Button>
-                </a>
-                
-                <a href="https://www.linkedin.com/in/leandro-nardphine/">
-                  <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
-                    <Linkedin className="h-5 w-5" />
-                  </Button>
-                </a>
-              </div>
-            </div>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+              <span className="text-primary text-glow">
+                {displayedName}
+                <span className="animate-pulse">|</span>
+              </span>
+            </h1>
           </div>
 
-          {/* Right side - Hero image */}
-          <div className="relative order-first lg:order-last">
-            <div className="relative">
-              <img
-                src={heroDeveloper}
-                alt="Professional developer at work"
-                className="rounded-xl shadow-2xl w-full h-auto max-w-xs mx-auto lg:max-w-sm"
-              />
+          {/* Role */}
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-mono text-muted-foreground">
+            Backend & Smart Contract Developer
+          </h2>
+
+          {/* Bio */}
+          <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed">
+            Building scalable backend systems and innovative blockchain solutions 
+            with a focus on performance, security, and clean architecture.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+            <Button 
+              size="lg" 
+              onClick={scrollToProjects}
+              className="font-semibold px-8 py-3 text-base bg-primary hover:bg-primary/90 transition-all hover:scale-105 hover:text-white"
+            >
+              View My Work
+            </Button>
+            
+            <div className="flex gap-4">
+              <a href="https://github.com/leeCode83">
+                <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+                  <Github className="h-5 w-5" />
+                </Button>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/leandro-nardphine/">
+                <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+                  <Linkedin className="h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
