@@ -56,7 +56,7 @@ const ProjectsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Featured <span className="text-primary">Projects</span>
           </h2>
-          <p className="text-white text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A showcase of my recent work in blockchain development, backend systems, and smart contract solutions
           </p>
         </div>
@@ -65,13 +65,13 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card key={index} className="card-hover-effect border-border/50 bg-card/50 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-xl font-semibold text-white">
+                <CardTitle className="text-xl font-semibold text-foreground">
                   {project.title}
                 </CardTitle>
               </CardHeader>
 
               <CardContent className="space-y-4">
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
 
