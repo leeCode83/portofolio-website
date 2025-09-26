@@ -45,11 +45,11 @@ const HeroSection = () => {
               Hello, I'm
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              <span className="text-primary">
+              <span className="text-foreground">
                 {displayedName.slice(0, 7)}
               </span>
               {displayedName.length > 7 && (
-                <span className="text-foreground text-glow">
+                <span className="text-primary text-glow">
                   {displayedName.slice(7)}
                 </span>
               )}
