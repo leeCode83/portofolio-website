@@ -77,13 +77,12 @@ const ProjectsSection = () => {
 
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
-                    <Badge
+                    <span
                       key={techIndex}
-                      variant="secondary"
-                      className="text-xs font-medium bg-secondary/50 hover:bg-secondary/70 transition-colors"
+                      className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full"
                     >
                       {tech}
-                    </Badge>
+                    </span>
                   ))}
                 </div>
               </CardContent>
