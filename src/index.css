@@ -12,28 +12,28 @@ All colors MUST be HSL.
   :root {
     /* Light theme - Soft Color Palette inspired by peach, pink, purple, blue */
     --background: 320 30% 95%;
-    --foreground: 240 15% 15%;
+    --foreground: 240 25% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 15% 15%;
+    --card-foreground: 240 25% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 15% 15%;
+    --popover-foreground: 240 25% 25%;
 
     /* Periwinkle blue as primary */
     --primary: 220 60% 65%;
-    --primary-foreground: 0 0% 100%;
+    --primary-foreground: 240 25% 25%;
 
     /* Light purple as secondary */
     --secondary: 270 40% 80%;
-    --secondary-foreground: 240 15% 15%;
+    --secondary-foreground: 240 25% 25%;
 
     --muted: 270 20% 90%;
-    --muted-foreground: 240 15% 40%;
+    --muted-foreground: 240 25% 35%;
 
     /* Peach as accent */
     --accent: 15 60% 82%;
-    --accent-foreground: 240 15% 15%;
+    --accent-foreground: 240 25% 25%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
@@ -48,8 +48,8 @@ All colors MUST be HSL.
     --hero-background: 320 30% 95%;
     --section-background: 320 30% 95%;
     --card-hover: 270 30% 92%;
-    --text-primary: 240 15% 15%;
-    --text-secondary: 220 60% 65%;
+    --text-primary: 240 25% 25%;
+    --text-secondary: 220 60% 55%;
     --accent-glow: 220 60% 65%;
 
     /* Animation variables */
