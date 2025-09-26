@@ -13,25 +13,25 @@ const AboutSection = () => {
       icon: <Code2 className="h-8 w-8" />,
       title: "Backend Developer",
       description: "Already learn backend development from 6 month ago. I learn about RESTful API, Cache, Rate Limiter, and many frameworks like Nest.js, Spring Boot, and Laravel",
-      highlight: "Understanding Backend Development Principal"
+      highlight: ["RESTful API", "Cache", "Rate Limiter", "Nest.js", "Spring Boot"]
     },
     {
       icon: <Blocks className="h-8 w-8" />,
       title: "Smart Contract Development",
       description: "Learn about blockchain and smart contract from community and internet. Interest working in Web3 space and do web3 hackathons.",
-      highlight: "Attending some hackathon and active in web3 community."
+      highlight: ["Web3 Hackathons", "Smart Contracts", "Blockchain"]
     },
     {
       icon: <BookOpen className="h-8 w-8" />,
       title: "Continuous Learning",
       description: "When I'm not coding, I learning new tools or framework from documentation and explore the latest developments in Web3 and distributed systems.",
-      highlight: "Great Learner"
+      highlight: ["Documentation", "Web3", "Distributed Systems"]
     },
     {
       icon: <Zap className="h-8 w-8" />,
       title: "Current Focus",
       description: "Currently focus in how to integrate blockchain network or tools in backend system.",
-      highlight: "Blockchain Integration"
+      highlight: ["Blockchain Integration", "Backend Systems"]
     }
   ];
 
@@ -65,9 +65,16 @@ const AboutSection = () => {
                     </p>
                     
                     <div className="pt-2 border-t border-border/30">
-                      <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-                        {card.highlight}
-                      </span>
+                      <div className="flex flex-wrap gap-2">
+                        {card.highlight.map((item, itemIndex) => (
+                          <span 
+                            key={itemIndex}
+                            className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </CardContent>
