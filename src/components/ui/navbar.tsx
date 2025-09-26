@@ -56,9 +56,10 @@ const Navbar = () => {
             {navItems.map((item) => (
               <Button
                 key={item.id}
-                variant="ghost"
-                className={`nav-link ${
-                  activeSection === item.id ? "active text-primary" : "text-muted-foreground hover:text-foreground"
+                className={`font-semibold px-4 py-2 text-sm transition-all hover:scale-105 ${
+                  activeSection === item.id 
+                    ? "bg-primary hover:bg-primary/90 text-white hover:text-white" 
+                    : "bg-transparent hover:bg-primary/90 text-muted-foreground hover:text-white"
                 }`}
                 onClick={() => scrollToSection(item.id)}
               >
