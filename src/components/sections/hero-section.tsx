@@ -63,7 +63,7 @@ const HeroSection = () => {
           </h2>
 
           {/* Bio */}
-          <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground max-w-2xl mx-auto leading-relaxed">
             Building scalable backend systems and innovative blockchain solutions 
             with a focus on performance, security, and clean architecture.
           </p>

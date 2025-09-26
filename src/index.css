@@ -10,45 +10,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Dark theme - Professional Backend Developer Portfolio with custom palette */
-    --background: 215 46% 8%;
-    --foreground: 0 0% 100%;
+    /* Light theme - Soft Color Palette inspired by peach, pink, purple, blue */
+    --background: 320 30% 95%;
+    --foreground: 240 15% 15%;
 
-    --card: 215 42% 19%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 15% 15%;
 
-    --popover: 215 42% 19%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 15% 15%;
 
-    /* Medium blue accent for interactive elements */
-    --primary: 210 31% 56%;
-    --primary-foreground: 215 46% 8%;
+    /* Periwinkle blue as primary */
+    --primary: 220 60% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 31% 35%;
-    --secondary-foreground: 0 0% 100%;
+    /* Light purple as secondary */
+    --secondary: 270 40% 80%;
+    --secondary-foreground: 240 15% 15%;
 
-    --muted: 210 31% 35%;
-    --muted-foreground: 210 31% 56%;
+    --muted: 270 20% 90%;
+    --muted-foreground: 240 15% 40%;
 
-    --accent: 210 31% 56%;
-    --accent-foreground: 215 46% 8%;
+    /* Peach as accent */
+    --accent: 15 60% 82%;
+    --accent-foreground: 240 15% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 31% 35%;
-    --input: 210 31% 35%;
-    --ring: 210 31% 56%;
+    --border: 270 20% 85%;
+    --input: 270 20% 88%;
+    --ring: 220 60% 65%;
 
     --radius: 0.75rem;
 
     /* Custom design tokens for portfolio */
-    --hero-background: 215 46% 8%;
-    --section-background: 215 46% 8%;
-    --card-hover: 215 42% 22%;
-    --text-primary: 0 0% 100%;
-    --text-secondary: 210 31% 56%;
-    --accent-glow: 210 31% 56%;
+    --hero-background: 320 30% 95%;
+    --section-background: 320 30% 95%;
+    --card-hover: 270 30% 92%;
+    --text-primary: 240 15% 15%;
+    --text-secondary: 220 60% 65%;
+    --accent-glow: 220 60% 65%;
 
     /* Animation variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
