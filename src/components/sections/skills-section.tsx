@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
   Code2, 
   Database, 
@@ -45,26 +46,30 @@ const SkillsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg text-primary">
-                  {category.icon}
-                </div>
-                <h3 className="text-lg font-semibold">{category.title}</h3>
-              </div>
+            <Card key={index} className="card-hover-effect border-border/50 bg-card/50 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3 text-lg">
+                  <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                    {category.icon}
+                  </div>
+                  {category.title}
+                </CardTitle>
+              </CardHeader>
               
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <Badge 
-                    key={skillIndex}
-                    variant="outline"
-                    className="text-sm font-medium border-border/50 bg-background/50 hover:bg-primary/10 hover:border-primary/50 hover:text-primary transition-all cursor-default"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <Badge 
+                      key={skillIndex}
+                      variant="outline"
+                      className="text-sm font-medium border-border/50 bg-background/50 hover:bg-primary/10 hover:border-primary/50 hover:text-primary transition-all cursor-default"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
 
