@@ -52,14 +52,14 @@ const Navbar = () => {
           </button>
 
           {/* Centered Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          <div className="hidden md:flex items-center space-x-2 absolute left-1/2 transform -translate-x-1/2">
             {navItems.map((item) => (
               <button
                 key={item.id}
-                className={`font-medium text-sm transition-colors ${
+                className={`font-medium text-sm px-4 py-2 rounded-lg transition-all duration-200 ${
                   activeSection === item.id 
-                    ? "text-primary" 
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "text-primary bg-primary/10 shadow-sm" 
+                    : "text-muted-foreground hover:text-foreground hover:bg-accent/50 active:bg-accent/70 active:scale-95"
                 }`}
                 onClick={() => scrollToSection(item.id)}
               >
@@ -97,18 +97,19 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border">
-            <div className="flex flex-col space-y-1 p-4">
+            <div className="flex flex-col space-y-2 p-4">
               {navItems.map((item) => (
-                <Button
+                <button
                   key={item.id}
-                  variant="ghost"
-                  className={`justify-start ${
-                    activeSection === item.id ? "text-primary" : "text-muted-foreground"
+                  className={`text-left px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                    activeSection === item.id 
+                      ? "text-primary bg-primary/10 shadow-sm" 
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50 active:bg-accent/70 active:scale-95"
                   }`}
                   onClick={() => scrollToSection(item.id)}
                 >
                   {item.label}
-                </Button>
+                </button>
               ))}
             </div>
           </div>
