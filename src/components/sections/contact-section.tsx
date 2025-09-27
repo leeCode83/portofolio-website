@@ -90,7 +90,7 @@ const ContactSection = () => {
 
             {/* Social Links */}
             {socialLinks.map((social, index) => (
-              <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm card-hover-effect">
+              <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex flex-col items-center text-center space-y-4">
                     <div className="p-3 bg-primary/10 rounded-lg text-primary">
@@ -103,7 +103,7 @@ const ContactSection = () => {
                     <Button 
                       variant="outline" 
                       size="sm"
-                      className="hover:bg-primary/10 hover:text-primary hover:border-primary transition-all"
+                      className="hover:bg-primary/90 transition-all hover:scale-110 hover:text-white transition-all"
                       onClick={() => window.open(social.url, "_blank")}
                     >
                       Visit
@@ -124,8 +124,8 @@ const ContactSection = () => {
                     Whether you have a project in mind or just want to chat about tech, I'd love to hear from you.
                   </p>
                   <Button 
-                    className="bg-primary hover:bg-primary/90 transition-all hover:scale-105"
-                    onClick={() => window.location.href = "mailto:john.doe@example.com"}
+                    className="font-semibold px-8 py-3 text-white bg-primary hover:bg-primary/90 transition-all hover:scale-110 hover:text-white"
+                    onClick={() => window.location.href = "mailto:leandro.halomoan@binus.ac.id"}
                   >
                     Send Message
                   </Button>

@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { 
   Code2, 
   Blocks, 
@@ -67,12 +68,13 @@ const AboutSection = () => {
                     <div className="pt-2 border-t border-border/30">
                       <div className="flex flex-wrap gap-2">
                         {card.highlight.map((item, itemIndex) => (
-                          <span 
+                          <Badge
                             key={itemIndex}
-                            className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full"
+                            variant="outline"
+                            className="text-sm font-medium border-border/50 bg-background/50 hover:bg-primary/90 transition-all hover:scale-105 hover:text-white transition-all cursor-default"
                           >
                             {item}
-                          </span>
+                          </Badge>
                         ))}
                       </div>
                     </div>

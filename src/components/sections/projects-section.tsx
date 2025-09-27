@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       title: "DeFi Lending Protocol",
       description: "A decentralized lending platform built on Ethereum with automated liquidation mechanisms and yield farming capabilities.",
       technologies: ["Solidity", "React", "Node.js", "Web3.js", "PostgreSQL"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/mzf11125/LiskIDRXHackathon",
       liveUrl: null,
     },
     {
@@ -77,12 +77,13 @@ const ProjectsSection = () => {
 
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
-                    <span
+                    <Badge
                       key={techIndex}
-                      className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full"
+                      variant="outline"
+                      className="text-sm font-medium border-border/50 bg-background/50 hover:bg-primary/90 transition-all hover:scale-105 hover:text-white transition-all cursor-default"
                     >
                       {tech}
-                    </span>
+                    </Badge>
                   ))}
                 </div>
               </CardContent>
@@ -92,7 +93,7 @@ const ProjectsSection = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="flex items-center gap-2 hover:bg-muted/50 transition-colors"
+                    className="flex items-center gap-2 hover:bg-primary/90 transition-all hover:scale-105 hover:text-white transition-all cursor-default"
                   >
                     <Github className="h-4 w-4" />
                     Code

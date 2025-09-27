@@ -16,7 +16,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["hero", "projects", "about", "skills", "contact"];
+      const sections = ["hero", "projects", "experience", "about", "skills", "contact"];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -34,6 +34,7 @@ const Navbar = () => {
 
   const navItems = [
     { id: "projects", label: "Projects" },
+    { id: "experience", label: "Experience" },
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "contact", label: "Contact" },
@@ -48,7 +49,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("hero")}
             className="font-mono text-lg font-semibold text-primary hover:text-accent transition-colors"
           >
-            // Developer Portfolio
+            // Leandro's Portfolio
           </button>
 
           {/* Centered Desktop Navigation */}
@@ -71,13 +72,13 @@ const Navbar = () => {
           {/* Social Links */}
           <div className="hidden md:flex gap-3">
             <a href="https://github.com/leeCode83">
-              <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+              <Button variant="outline" size="icon" className="hover:bg-primary/90 transition-all hover:scale-105 hover:text-white">
                 <Github className="h-5 w-5" />
               </Button>
             </a>
             
             <a href="https://www.linkedin.com/in/leandro-nardphine/">
-              <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+              <Button variant="outline" size="icon" className="hover:bg-primary/90 transition-all hover:scale-105 hover:text-white">
                 <Linkedin className="h-5 w-5" />
               </Button>
             </a>
@@ -101,7 +102,7 @@ const Navbar = () => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  className={`text-left px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                  className={`text-left px-4 py-3 rounded-lg font-medium transition-all ${
                     activeSection === item.id 
                       ? "text-primary bg-primary/10 shadow-sm" 
                       : "text-muted-foreground hover:text-foreground hover:bg-accent/50 active:bg-accent/70 active:scale-95"

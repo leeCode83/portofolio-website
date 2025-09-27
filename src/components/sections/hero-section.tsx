@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const HeroSection = () => {
@@ -73,7 +72,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               onClick={scrollToProjects}
-              className="font-semibold px-8 py-3 text-base bg-primary hover:bg-primary/90 transition-all hover:scale-105 hover:text-white"
+              className="font-semibold px-8 py-3 text-white bg-primary hover:bg-primary/90 transition-all hover:scale-110 hover:text-white"
             >
               View My Work
             </Button>
@@ -81,9 +80,9 @@ const HeroSection = () => {
               size="lg" 
               variant="outline"
               asChild
-              className="font-semibold px-8 py-3 text-base border-primary text-primary hover:bg-primary hover:text-white transition-all hover:scale-105"
+              className="font-semibold px-8 py-3 text-base hover:scale-110 transition-transform"
             >
-              <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1Uz5N1ReqQI5lYzO5K_nf-JjEm7PlVx8J/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Read My CV
               </a>
             </Button>
