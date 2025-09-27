@@ -51,21 +51,31 @@ const Navbar = () => {
             // Developer Portfolio
           </button>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          {/* Centered Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
             {navItems.map((item) => (
-              <Button
+              <button
                 key={item.id}
-                className={`font-semibold px-4 py-2 text-sm transition-all hover:scale-105 ${
+                className={`font-medium text-sm transition-colors ${
                   activeSection === item.id 
-                    ? "bg-primary hover:bg-primary/90 text-white hover:text-white" 
-                    : "bg-transparent hover:bg-primary/90 text-muted-foreground hover:text-white"
+                    ? "text-primary" 
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
                 onClick={() => scrollToSection(item.id)}
               >
                 {item.label}
-              </Button>
+              </button>
             ))}
+          </div>
+
+          {/* CTA Button */}
+          <div className="hidden md:block">
+            <Button 
+              onClick={() => scrollToSection("contact")}
+              className="font-semibold px-6 py-2 text-sm bg-primary hover:bg-primary/90 transition-all hover:scale-105 hover:text-white rounded-full"
+            >
+              Get In Touch
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
