@@ -69,13 +69,23 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex justify-center pt-8">
+          <div className="flex justify-center gap-4 pt-8 flex-wrap">
             <Button 
               size="lg" 
               onClick={scrollToProjects}
               className="font-semibold px-8 py-3 text-base bg-primary hover:bg-primary/90 transition-all hover:scale-105 hover:text-white"
             >
               View My Work
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              asChild
+              className="font-semibold px-8 py-3 text-base border-primary text-primary hover:bg-primary hover:text-white transition-all hover:scale-105"
+            >
+              <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                Read My CV
+              </a>
             </Button>
           </div>
         </div>
