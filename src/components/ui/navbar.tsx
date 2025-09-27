@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,14 +68,19 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button 
-              onClick={() => scrollToSection("contact")}
-              className="font-semibold px-6 py-2 text-sm bg-primary hover:bg-primary/90 transition-all hover:scale-105 hover:text-white rounded-full"
-            >
-              Get In Touch
-            </Button>
+          {/* Social Links */}
+          <div className="hidden md:flex gap-3">
+            <a href="https://github.com/leeCode83">
+              <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/leandro-nardphine/">
+              <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

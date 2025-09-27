@@ -69,7 +69,7 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <div className="flex justify-center pt-8">
             <Button 
               size="lg" 
               onClick={scrollToProjects}
@@ -77,20 +77,6 @@ const HeroSection = () => {
             >
               View My Work
             </Button>
-            
-            <div className="flex gap-4">
-              <a href="https://github.com/leeCode83">
-                <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
-                  <Github className="h-5 w-5" />
-                </Button>
-              </a>
-              
-              <a href="https://www.linkedin.com/in/leandro-nardphine/">
-                <Button variant="outline" size="icon" className="hover:scale-110 transition-transform">
-                  <Linkedin className="h-5 w-5" />
-                </Button>
-              </a>
-            </div>
           </div>
         </div>
       </div>
