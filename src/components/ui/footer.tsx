@@ -45,7 +45,7 @@ const Footer = () => {
                 key={social.name}
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 hover:text-primary transition-colors"
+                className="hover:bg-primary/90 transition-all hover:scale-105 hover:text-white"
                 onClick={() => window.open(social.url, "_blank")}
               >
                 {social.icon}

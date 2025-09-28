@@ -4,36 +4,28 @@ import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    location: "San Francisco, CA",
-    duration: "2022 - Present",
-    description: "Lead development of enterprise web applications using React, Node.js, and cloud technologies. Mentored junior developers and implemented best practices for code quality and performance.",
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "Docker"]
+    title: "Lisk Builder Challenge Hackathon",
+    position: "Team Lead",
+    location: "Jakarta, Indonesia",
+    duration: "June 2025",
+    description: "Designed the optimal web3 application architecture and managed the development workflow to ensure efficient project execution as Team Lead. Successfully led a team to achieve 2nd Place Winner and Social Media Challenge Winner out of 34 competing teams in the Lisk Builder Challenge Hackathon.",
+    technologies: ["React", "Node.js", "FastAPI", "Solidity", "Gemini API"]
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Innovations Ltd.",
-    location: "New York, NY",
-    duration: "2020 - 2022",
-    description: "Developed and maintained multiple client projects, focusing on responsive web applications and API integrations. Collaborated with design teams to implement pixel-perfect UI components.",
-    technologies: ["JavaScript", "React", "Express.js", "MongoDB", "CSS3", "Git"]
+    title: "Festigo Web Application",
+    position: "Backend Developer",
+    location: "Jakarta, Indonesia",
+    duration: "March 2025 - May 2025",
+    description: "Developed the backend REST API using NestJS and designed the PostgreSQL database with PrismaORM for \"Festigo\" a college project aimed at event promotion. Implemented robust business logic and data handling processes that served as the backbone for the application's features.",
+    technologies: ["Typescript", "Next.js", "Nest.js", "PostgreSQL", "Cloudinary", "Git"]
   },
   {
-    title: "Frontend Developer",
-    company: "Creative Agency Co.",
-    location: "Austin, TX",
-    duration: "2019 - 2020",
-    description: "Built interactive user interfaces for marketing websites and e-commerce platforms. Optimized performance and ensured cross-browser compatibility.",
-    technologies: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "SASS"]
-  },
-  {
-    title: "Junior Web Developer",
-    company: "StartUp Labs",
-    location: "Remote",
-    duration: "2018 - 2019",
-    description: "Assisted in developing web applications and learned modern development practices. Contributed to both frontend and backend development tasks.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "WordPress"]
+    title: "First Year Program Binus 2024",
+    position: "Freshmen Leader & Freshmen Partner",
+    location: "Jakarta, Indonesia",
+    duration: "August 2024 - May 2025",
+    description: "Co-managed a six-member team to successfully organize and execute an orientation program for new students. Mentored a group of ten freshmen for one year, providing guidance and actively fostering their integration into university life.",
+    technologies: ["Teamwork", "Leadership", "Problem Solving", "Communication"]
   }
 ];
 
@@ -58,7 +50,7 @@ const ExperienceSection = () => {
                       {experience.title}
                     </CardTitle>
                     <div className="text-primary font-medium text-lg">
-                      {experience.company}
+                      {experience.position}
                     </div>
                   </div>
                   
@@ -85,7 +77,7 @@ const ExperienceSection = () => {
                     <Badge 
                       key={techIndex}
                       variant="outline"
-                      className="text-sm font-medium border-border/50 bg-background/50 hover:bg-primary/10 hover:border-primary/50 hover:text-primary transition-all cursor-default"
+                      className="text-sm font-medium border-border/50 bg-background/50 hover:bg-primary/90 transition-all hover:scale-105 hover:text-white transition-all cursor-default"
                     >
                       {tech}
                     </Badge>

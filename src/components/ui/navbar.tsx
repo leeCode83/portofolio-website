@@ -57,11 +57,10 @@ const Navbar = () => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                className={`font-medium text-sm px-4 py-2 rounded-lg transition-all duration-200 ${
-                  activeSection === item.id 
-                    ? "text-primary bg-primary/10 shadow-sm" 
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent/50 active:bg-accent/70 active:scale-95"
-                }`}
+                className={`font-medium text-sm px-4 py-2 rounded-lg transition-all duration-200 ${activeSection === item.id
+                    ? "text-primary bg-primary/10 shadow-sm"
+                    : "text-muted-foreground hover:text-primary hover:bg-primary/10 active:bg-primary/10 active:scale-95"
+                  }`}
                 onClick={() => scrollToSection(item.id)}
               >
                 {item.label}
@@ -76,7 +75,7 @@ const Navbar = () => {
                 <Github className="h-5 w-5" />
               </Button>
             </a>
-            
+
             <a href="https://www.linkedin.com/in/leandro-nardphine/">
               <Button variant="outline" size="icon" className="hover:bg-primary/90 transition-all hover:scale-105 hover:text-white">
                 <Linkedin className="h-5 w-5" />
@@ -102,11 +101,10 @@ const Navbar = () => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  className={`text-left px-4 py-3 rounded-lg font-medium transition-all ${
-                    activeSection === item.id 
-                      ? "text-primary bg-primary/10 shadow-sm" 
+                  className={`text-left px-4 py-3 rounded-lg font-medium transition-all ${activeSection === item.id
+                      ? "text-primary bg-primary/10 shadow-sm"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent/50 active:bg-accent/70 active:scale-95"
-                  }`}
+                    }`}
                   onClick={() => scrollToSection(item.id)}
                 >
                   {item.label}
