@@ -77,14 +77,14 @@ const SkillsSection = () => {
         <div className="mt-16 text-center">
           <h3 className="text-xl font-semibold mb-6 text-primary">Certifications & Achievements</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            <Badge variant="secondary" className="text-sm py-2 px-4 bg-secondary/30">
-              IBM Granite for Software Development - IBM Skillsbuild
-            </Badge>
-            <Badge variant="secondary" className="text-sm py-2 px-4 bg-secondary/30">
+            <Badge variant="secondary" className="text-md py-2 px-4 bg-white/50 hover:scale-105">
               Certified Ethereum Developer - HackQuest
             </Badge>
-            <Badge variant="secondary" className="text-sm py-2 px-4 bg-secondary/30">
+            <Badge variant="secondary" className="text-md py-2 px-4 bg-white/50 hover:scale-105">
               Java Programming Course - Great Learning
+            </Badge>
+            <Badge variant="secondary" className="text-md py-2 px-4 bg-white/50 hover:scale-105">
+              IBM Granite for Software Development - IBM Skillsbuild
             </Badge>
           </div>
         </div>

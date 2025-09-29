@@ -15,7 +15,7 @@ const ProjectsSection = () => {
     {
       title: "Festigo Web App",
       description: "Festigo is a web application designed to help users discover various festivals and events, connecting them with organizers and a community of attendees.",
-      technologies: ["Node.js", "PostgreSQL", "Next.js, Cloudinary"],
+      technologies: ["Node.js", "PostgreSQL", "Next.js", " Cloudinary"],
       githubUrl: "https://github.com/leeCode83/festigo-web-app",
       liveUrl: null,
     },
